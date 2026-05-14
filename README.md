@@ -3,9 +3,24 @@ Escaner de vulnerabilidades con el Scripts en la organizacion trabajada en el ma
 
 # Recolector de Vulnerabilidades Públicas CISA + NVD
 
-## Descripción
+Descripción
 
 Este proyecto fue desarrollado en Python con el objetivo de recopilar vulnerabilidades públicas desde fuentes oficiales de ciberseguridad y exportarlas automáticamente a un archivo Excel para fines de análisis y seguimiento.
+
+El script consume información desde:
+
+CISA (Cybersecurity and Infrastructure Security Agency)
+NVD (National Vulnerability Database)
+
+Además, enriquece los datos obteniendo:
+
+CVE
+CVSS
+Severidad
+Producto afectado
+Proveedor
+Descripción
+Uso conocido en campañas de ransomware
 
 El script consume información desde:
 
@@ -23,12 +38,6 @@ Además, enriquece los datos obteniendo:
 
 ---
 
-## Objetivo
-
-Automatizar la recopilación de vulnerabilidades públicas y generar reportes en formato Excel que puedan ser utilizados dentro de una organización para análisis de seguridad informática y gestión de vulnerabilidades.
-
----
-
 ## Tecnologías Utilizadas
 
 - Python
@@ -38,9 +47,24 @@ Automatizar la recopilación de vulnerabilidades públicas y generar reportes en
 
 ---
 
-## Instalación
+Instalación y Ejecución del Proyecto
+1. Instalar Python
 
-Instalar dependencias:
+Descargar e instalar Python desde el sitio oficial:
 
-```bash
-pip install requests pandas openpyxl
+https://www.python.org/downloads/
+
+Durante la instalación marcar la opción:
+
+Add Python to PATH
+
+Verificar instalación:
+
+python --version
+2. Descargar o Clonar el Proyecto
+Opción A — Descargar ZIP desde GitHub
+Entrar al repositorio en GitHub
+Presionar:
+Code
+Download ZIP
+Extraer el archivo ZIP
